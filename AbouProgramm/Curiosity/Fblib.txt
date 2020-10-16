@@ -1,0 +1,7 @@
+The fb library is what is responsible for almost all of the software
+rendering that your X Server might do.
+
+You're probably mostly spending your time in fbComposite() and its
+children, which is the Render extension software implementation. Some
+drivers have hardware implementations of this, and we're working on
+making this be the case for more hardware.
