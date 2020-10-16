@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto2</title>
+    <style type="text/css">
+    *{margin: 0;padding: 0;box-sizing;}
+        .main{
+           max-height: 70px;
+           margin: 0 auto; 
+           padding: 0 3%;
+           -webkit-box-shadow: 5px 4px 3px rgba(50, 50, 50, 0.77);
+           -moz-box-shadow:    5px 4px 3px rgba(50, 50, 50, 0.77);
+           box-shadow:         5px 4px 3px rgba(50, 50, 50, 0.77);
+        }
+
+        .shadow{
+           -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+           -moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+           box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);    
+        }
+
+        header{
+            
+            padding: 5px;
+            text-align: center;
+            background-color: black;
+        }
+        header li{
+            display: inline-block;
+            padding: 0 10px;
+        }
+        header th{
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+        }
+        .imagem{
+            position: relative;
+            left: 200px;
+            top: 35px;
+        }
+        .texto{
+            position: relative;
+            left: 25px;
+            top: 70px; 
+            color: brown
+            text-shadow: 
+            0.1em 0.1em 0.1em grey
+        }
+        .noticias{
+            position: relative;
+            left: 20px;
+            top: 100px; 
+        }
+        .ln{
+            position: relative;
+            font-size: 15px;
+            color: rgb(2, 56, 100);
+        }
+        .vMais{
+            position: relative;
+            font-size: 10px;
+            color: rgb(145, 10, 0);
+        }
+        .date{
+            position: relative;
+            font-size: 10px;
+            color: rgb(2, 56, 100);
+        }
+        .box{
+            position: relative;
+            text-align: center;
+            color: white;
+            left: 600px;
+            top: 200px;
+            width:100px;
+            height:50px;
+            background-color:rgb(145, 10, 0);
+            border-radius: 10px;
+            text-shadow:
+             0.1em 0.1em 0.1em #000
+        }
+       
+        </style>
+</head>
+<body>
+    <header>
+    <div class="main"> 
+      <table>
+        <tr>   
+        <td><th><img class="shadow" src="cruz.jpg" width="80" height="100"></th></td>
+        <td><th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</th></td> 
+        <td><th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Videos</th></td>
+        <td><th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Membros</th></td>
+        <td><th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cursos</th></td>
+        <td><th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fale Conosco</th></td>
+        </tr>       
+    </table>
+    </div>
+    </header>
+    <div>
+        <img class="imagem" src="imgcentral.jpg" width="1000" height="300">
+        </div>
+<div class="texto">
+     <h1>Conhecendo a Verdade</h1>
+</div>
+<div class="noticias">
+    <table>
+        <tr>
+            <th><img src="yeshua.jpg" width="220" height="110"><br><br>
+                <a class="ln">Yeshua || Sobre o Espírito</a><br><br><br><a class="vMais">ler mais</a><br><br><a class="date">06/05/2020 </a></th>
+            <th><img src="biblia.jpg" width="220" height="110"><br><br>
+                <a class="ln">Bíblia Sagrada || shema israel <br> yavé adonai yavé echad</a><br><br><a class="vMais">ler mais</a><br><br><a class="date">06/05/2020 </a></th>
+            <th><img src="friday.jpg" width="220" height="110"><br><br>
+                <a class="ln">Luz do Mundo</a><br><br><br><a class="vMais">ler mais</a><br><br><a class="date">06/05/2020 </a></th>
+            <th><img src="gracas.jpg" width="220" height="110"><br><br>
+                <a class="ln">Livre Arbítrio e <br> a Verdadeira Liberdade em Cristo</a><br><br><a class="vMais">ler mais</a><br><br><a class="date">06/05/2020 </a></th>
+            <th><img src="caminho.jpg" width="220" height="110"><br><br>
+                <a class="ln">"Eu sou o Caminho <br> a Verdade e a Vida"</a><br><br><a class="vMais">ler mais</a><br><br><a class="date">06/05/2020 </a></th>
+        </tr>
+    </table>
+</div>
+<div>
+    <h4 class="box">ir para noticias</h4>
+</div>
+</body>
+
+</html>

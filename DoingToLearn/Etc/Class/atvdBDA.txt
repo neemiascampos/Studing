@@ -1,0 +1,12 @@
+1) select * from client;
+2) select * from client where cli_cod = 1;
+3) select * from cliente where cli_cod = 3 || cli_cod =4;
+4) select * from cliente where ch >=2300 && >= 4000;
+5) select disciplinas from cliente order by disciplinas asc;
+6) select professores from cliente order by professores desc;
+7) select * from banco de dados, calculo1;
+8) select nome from cliente where ra>202002 && codigoCurso=4 order by nome asc;
+9) select al_nome, al_fone, al_ra from aluno;
+10)select prof_nome, prof_fone from professor;
+
+
