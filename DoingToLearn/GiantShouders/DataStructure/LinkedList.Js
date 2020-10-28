@@ -161,7 +161,21 @@ export default class LinkedList {
          * @return {LinkedListNode}
          */
         deleteHead() {
-            //line 161
+            if (!this.head) {
+                return null;
+            }
+            
+            const deleteHead = this.head;
+
+            if (this.head.next) {
+                this.head = this.deleteHead.next;
+            } else {
+               this.head = null;
+               this.tail = null; 
+            }
+
+            return deletedHead;
+            //175
         }
     }
     

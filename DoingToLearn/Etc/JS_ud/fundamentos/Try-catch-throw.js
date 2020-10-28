@@ -12,7 +12,7 @@ function tratarErroELancar(erro) {
 
 function imprimirNomeGritando(obj) {
     try {
-        console.log('É, deu certo ' + obj.nome.toUpperCase() + '!!!'-)
+        console.log('É, deu certo ' + obj.nome.toUpperCase() + '!!!')
     } catch (e) {
         console.log('É, deu errado, amigo')
         tratarErroELancar(e)
