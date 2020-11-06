@@ -175,7 +175,36 @@ export default class LinkedList {
             }
 
             return deletedHead;
-            //175
         }
+
+        /**
+         * @param {*[]} values - Array of values that need to be converted to linked list.
+         * @return {linkedList}
+         */
+        fromArray(values){
+            values.forEach((values) => this.append(value));
+
+            return this;
+        }
+
+        // Next lines without coments about each functions
+
+        toArray() {
+            const nodes = [];
+
+            let currentNode = this.head;
+            while (currentNode) {
+                nodes.push(currentNode);
+                currentNode = currentNode.next;
+            }
+
+            return nodes;
+        }
+
+        toString(callback) {
+            return this.toArray().map((node) => node.toString(callback)).toString();
+        }
+
+        //215 
     }
     
