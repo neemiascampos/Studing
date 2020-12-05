@@ -34,3 +34,48 @@ void jogador(char matriz[8][8], char jogador, int posto)
         printf("\n\tCOLUNEA:  ");
         schanf("%d", &co);
 
+        if((li+co)%2==0)
+        {
+            if((jogador==1&&l<li)||(jogador==2&&l>li))
+            {
+                printf("linha\n");
+            
+            if(c-1==co||c+1==co)
+            {
+                    if(co==c-1)
+                    {
+                        matriz[li][co] = jogador;
+                        matriz[l][c] = 0;
+                        opcao++;
+                    }
+                    if(co==c+1)
+                    {
+                        matriz[li][co] = jogador;
+                        matriz[l][c] = 0;
+                        opcao++;
+                    }
+
+                    if(matriz[l+1][c+1]==oposto)
+                    {
+                        if(c+2==co)
+                        {
+                            matriz[li][co] = jogador;
+                            matriz[l][c] = 0;
+                            opcao++;
+                            matriz[l+1][c+1]=0;
+                        }
+                    }
+
+                    if(matriz[l+1][c-1]==oposto)
+                    {
+                        if(c-2==co)
+                        {
+                            matriz[li][co] = jogador;
+                            matriz[l][c] = 0;
+                            matriz[l+1][c-1]=0;
+                            opcao++;
+                        }
+                    }
+
+                    
+            }
