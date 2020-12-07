@@ -1,4 +1,4 @@
-struct{
+/*struct{
     char game[20], game2[20], ganhador[20];
     int cont1, cont2, pont_max;
 }dama;
@@ -79,3 +79,4 @@ void jogador(char matriz[8][8], char jogador, int posto)
 
                     
             }
+*/
