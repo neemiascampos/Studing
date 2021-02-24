@@ -4,4 +4,6 @@ const axios = require('axios')
 axios.get(url).then(response => {
     const funcionarios = response.data
     console.log(funcionarios)
+
+    
 })
