@@ -1,18 +1,7 @@
-year= 2005;
-    System.out.println("teste");
-    System.out.println(centuryFromYear(year));
+    year= 2005
+    console.log("teste")
+    console.log(centuryFromYear(year))
 
 function centuryFromYear(year) {
-    if (year == 0) {
-        century=0;
-    } else {
-        century = 1;
-        for (i=1 ; i==year ;i++) {
-            yearCentury= century*100;
-            if (year==yearCentury){
-                century=century+1;
-            }        
-        }
-    }
-    return century;
+    return Math.floor((year-1)/100) + 1;
 }
