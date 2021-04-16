@@ -1,5 +1,3 @@
-package AtvdElevador;
-
 public class TestaElevador {
 
 	public static void main(String[] args) {

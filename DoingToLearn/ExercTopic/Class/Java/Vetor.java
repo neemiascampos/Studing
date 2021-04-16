@@ -1,4 +1,3 @@
-package atividade2Mau;
 public class Vetor {
 	
 	private Aluno[] alunos = new Aluno[100];

@@ -1,5 +1,3 @@
-package atividade2Mau;
-
 public class VetorTeste {
 
 	public static void main(String[] args) {
@@ -22,7 +20,7 @@ public class VetorTeste {
 		vetor.adiciona("Marcela");
 		vetor.adiciona("Eduardo");
 		vetor.adiciona("Mary");
-		System.out.println("Ao todo são " +vetor.tamanho()+ " alunos");
+		System.out.println("Ao todo sï¿½o " +vetor.tamanho()+ " alunos");
 		vetor.mostrarAlunos();
 		vetor.remove(1);
 		vetor.remove(3);		

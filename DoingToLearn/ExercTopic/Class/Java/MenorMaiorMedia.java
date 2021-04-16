@@ -4,19 +4,19 @@ public class MenorMaiorMedia {
 	public static void main(String[] args) {
 		double a,b,c,maior=0,menor=0, media;
 		boolean teste1=false,teste2=false;
-		Scanner ler = new Scanner(System.in);
+		try(Scanner ler = new Scanner(System.in)){
 			System.out.println("Digite um valor para A");
 				a = ler.nextInt();
 			System.out.println("Digite um valor para B");
 				b = ler.nextInt();
 			System.out.println("Digite um valor para C");
 				c = ler.nextInt();
-		
+		}
 		if(a>b && a>c) {maior = a;}
 		else if(b>a && b>c) {maior = b;}
 		else if(c>b && c>a) {maior = c;}
 		else {
-			System.out.println("Não existe um único numero maior");
+			System.out.println("Nï¿½o existe um ï¿½nico numero maior");
 			teste1 = true;
 		}
 		
@@ -24,23 +24,23 @@ public class MenorMaiorMedia {
 		else if(b<a && b<c) {menor = b;}
 		else if(c<b && c<a) {menor = c;}
 		else {
-			System.out.println("Não existe um único numero menor");
+			System.out.println("Nï¿½o existe um ï¿½nico numero menor");
 			teste2 = true;
 		}
 		
 		media = (a+b+c)/3;
 		
 		if(teste1 && teste2) {
-			System.out.println("A media é "+media);
+			System.out.println("A media ï¿½ "+media);
 		}
 		else if(teste1) {
-			System.out.println("O menor numero é "+menor+", e a média é "+media);
+			System.out.println("O menor numero ï¿½ "+menor+", e a mï¿½dia ï¿½ "+media);
 		}
 		else if(teste2) {
-			System.out.println("O maior numero é "+maior+", e a média é "+media);
+			System.out.println("O maior numero ï¿½ "+maior+", e a mï¿½dia ï¿½ "+media);
 		}
 		else {
-		System.out.println("O maior número é "+maior+", o menor é "+menor+", e a média é "+media);
+		System.out.println("O maior nï¿½mero ï¿½ "+maior+", o menor ï¿½ "+menor+", e a mï¿½dia ï¿½ "+media);
 		}
 	}
 }

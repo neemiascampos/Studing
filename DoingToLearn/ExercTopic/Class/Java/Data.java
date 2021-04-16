@@ -1,11 +1,9 @@
-package AtividadeMau;
-
 public class Data {
 	int dia;
 	int mes;
 	int ano;
 
-	//É o mesmo código de baixo, mas encurtei um pouco usando Boolean
+	//ï¿½ o mesmo cï¿½digo de baixo, mas encurtei um pouco usando Boolean
 /*	void getData() {
 *		if(dia<=9 && mes<=9) {
 *			System.out.println("0"+dia+"/"+"0"+mes+ "/"+ano);

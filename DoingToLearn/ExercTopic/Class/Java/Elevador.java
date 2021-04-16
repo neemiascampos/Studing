@@ -1,5 +1,3 @@
-package AtvdElevador;
-
 public class Elevador {
 	private int maxPessoas;
 	private int maxAndar;
@@ -18,7 +16,7 @@ public class Elevador {
 	
 	public void entra() {
 		if(qtdPessoas>=maxPessoas) {
-			System.out.println("Lamento, aqui não é coração de mãe");
+			System.out.println("Lamento, aqui nï¿½o ï¿½ coraï¿½ï¿½o de mï¿½e");
 		}
 		else {
 			this.qtdPessoas = qtdPessoas + 1;
@@ -29,7 +27,7 @@ public class Elevador {
 	public void sai() {
 		if(qtdPessoas<=0) {
 			System.out.println("Quer tirar mais quem? Eu ja to sozinho!");
-			System.out.println("E olha que eu sou o próprio elevador..");
+			System.out.println("E olha que eu sou o prï¿½prio elevador..");
 		}
 		else {
 			this.qtdPessoas = qtdPessoas-1;
@@ -40,23 +38,23 @@ public class Elevador {
 	
 	public void sobe() {
 		if(andar>=maxAndar) {
-			System.out.println("Não temos como atravessar paredes, desculpe!");
+			System.out.println("Nï¿½o temos como atravessar paredes, desculpe!");
 		}
 		else {
 			this.andar = andar + 1;
-			System.out.println("Subindo, o céu é o limite!");
-			System.out.println("na verdade.. é o andar "+maxAndar+", haha..");
+			System.out.println("Subindo, o cï¿½u ï¿½ o limite!");
+			System.out.println("na verdade.. ï¿½ o andar "+maxAndar+", haha..");
 		}
 	}
 	
 	public void desce() {
 		if(andar<=0) {
-			System.out.println("Insira seu passe pro submundo e tentaremos atravessar o chão");
+			System.out.println("Insira seu passe pro submundo e tentaremos atravessar o chï¿½o");
 		}
 		else {
 			this.andar = andar + -1;
 			System.out.println("Descendo");
-			System.out.println("Você chegou ao andar "+andar);
+			System.out.println("Vocï¿½ chegou ao andar "+andar);
 		}
 	}
 	
