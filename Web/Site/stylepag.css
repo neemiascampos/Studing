@@ -20,6 +20,8 @@
         font-size: 12px;
         margin: 5px 0px;
         padding: 7px 0px;
+        font-family: 'Dela Gothic One', cursive;
+        font-size: large;
     }
 
     button{
@@ -83,7 +85,7 @@
         }
         .logo{
             position:absolute;
-            left: 0;
+            left: 30px;
             top: 2px;
         }
         .logo img{
@@ -100,7 +102,7 @@
             position: absolute;
             right: 0px;
             bottom: 1px;
-            display: inline-block;
+            display: inline;
             width: 60%;
             margin: 4px;
             justify-content: space-around;            
@@ -151,18 +153,20 @@
         font-size: 11px;
     }
 
-    footer ul{
-        list-style: none;
-        padding-inline-start: 0px;
-    }
-
-    footer li{padding: 2px; font-family: 'Dela Gothic One', cursive;}
+    
     footer{
         margin: 0 0 20px 0;
         width: 99%;
         border-top: 1px solid gray;
         border-bottom: 1px solid gray;
     }
+
+    footer ul{
+        list-style: none;
+        padding-inline-start: 0px;
+    }
+
+    footer li{padding: 2px; font-family: 'Dela Gothic One', cursive;}
 
     footer h2{
         text-align: left;
@@ -183,46 +187,80 @@
     }
 
     .logos{
-        position:relative;
-        left: 100px;
-        display: inline;
-        height: 10%;
-        margin-top: 30px;
+        margin: 20px 0;
     }
-    .logos div{
-        margin: 0px;
+    
+    #GitHub{background:whitesmoke url(./imagens/github.png) no-repeat center;}
+    #Instagram{background:whitesmoke url(./imagens/instagram.png) no-repeat center;}
+    #Facebook{background: whitesmoke url(./imagens/facebook.png) no-repeat center;}
+    #LinkedIn{background:whitesmoke url(./imagens/linkedin.png) no-repeat center;}
+
+    #GitHub, #Instagram, #Facebook, #LinkedIn {
+        background-size:contain;
+        height: 40px;
         border-radius: 100%;
-    }
-
-    #GitHub{
-        background:#fff url(github.png) no-repeat center;
-        background-size:contain;
-        height: 40px;
-    }
-
-    #Instagram{
-        background:#fff url(instagram.png) no-repeat center;
-        background-size:contain;
-        height: 40px;
-    }
-
-    #Facebook{
-        background:#fff url(facebook.png) no-repeat center;
-        background-size:contain;
-        height: 40px;
-    }
-
-    #LinkedIn{
-        background:#fff url(linkedin.png) no-repeat center;
-        background-size:contain;
-        height: 40px;
     }
 
     .copyright{
         position: absolute;
         left: 20%;
-        padding-top: 10px;
+        padding: 10px;
         color: rgb(146, 146, 146 , .8);
     }
 
-        
+    
+
+@media only screen and (max-device-width: 900px) {
+    header, .container{
+        margin-inline: 20px;       
+    }
+    
+    .cont{
+        margin: 100px;
+    }
+
+    header{
+        width: 99%;
+        padding: 3px 0 30px 0;
+    }
+
+    button{
+        padding: 7px 20px;
+        margin: 0px 10px;
+        font-size: 120%;
+                   
+    }
+
+    footer *{
+        font-size: 20px;
+    }
+
+    .footnavElogo{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .logos{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .logos a{
+        margin:10px;
+    }
+
+    .footnavElogo{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .footnav div{
+        width: 33%;
+        padding: 5px 10px 20px 10px;
+    }
+
+    #GitHub, #Instagram, #Facebook, #LinkedIn {
+        width: 100px;
+        height: 100px;
+    }
+    
+
+}
